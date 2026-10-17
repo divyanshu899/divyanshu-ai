@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     }));
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.8-flash-lite",
+      model: "gemini-3.5-flash-lite",
       contents: contents,
       config: {
         systemInstruction: "You are Divyanshu AI, a brilliant, helpful, and concise personal AI assistant.",
